@@ -31,6 +31,15 @@ GREETING_PATTERN = re.compile(
 )
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    return {
+        "status": "ok",
+        "service": "Gemmy Backend",
+        "message": "Use /health for health checks or /chat to send messages.",
+    }
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {
