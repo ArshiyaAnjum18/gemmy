@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gemmy | Hidden Gems Society</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="gemmy-widget is-open" id="gemmyWidget" aria-label="Chat with Gemmy" aria-hidden="false">
+    <header class="widget-header">
+      <div>
+        <strong>Ask Gemmy</strong>
+        <span>Hidden Gems assistant</span>
+      </div>
+      <button id="closeGemmy" type="button" aria-label="Close Gemmy">×</button>
+    </header>
+
+    <div class="messages" id="messages" aria-live="polite">
+      <article class="message assistant-message">
+        <div class="message-avatar" aria-hidden="true">✦</div>
+        <div class="message-body">
+          <span class="message-label">Gemmy</span>
+          <p>Hi there! I'm Gemmy. Ask me about Hidden Gems programs, opportunities, or registrations.</p>
+        </div>
+      </article>
+    </div>
+
+    <form class="composer" id="chatForm">
+      <label class="sr-only" for="messageInput">Your question</label>
+      <textarea id="messageInput" name="message" rows="1" placeholder="Type your question..." autocomplete="off" required></textarea>
+      <button class="send-button" id="sendButton" type="submit" aria-label="Send message"><span aria-hidden="true">➤</span></button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

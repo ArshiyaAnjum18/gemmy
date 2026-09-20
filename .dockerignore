@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.git/
+.gitignore
+.vscode/
+.env
+.env.*
+.pytest_cache/
+.DS_Store
+backend/data/chroma/
+backend/data/knowledge_base/
